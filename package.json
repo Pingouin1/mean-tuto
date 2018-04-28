@@ -1,0 +1,26 @@
+{
+  "name": "mean-tuto",
+  "version": "1.0.0",
+  "description": "Test MEAN (cloudboost)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pingouin1/mean-tuto.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pingouin1/mean-tuto/issues"
+  },
+  "homepage": "https://github.com/Pingouin1/mean-tuto#readme",
+  "dependencies": {
+    "angular": "^1.6.10",
+    "angular-route": "^1.6.10",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.16"
+  }
+}
