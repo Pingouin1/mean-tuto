@@ -21,22 +21,10 @@ app.listen(port);
 
 console.log(`Server in running on port: ${port}`);
 
-router.get('/api', (request, response) => {
-  response.status(200).send({message: 'Hello World!'});
-});
-
-router.get('/api/users', (request, response) => {
-  let users = [{
-    first_name:'Pingouin',
-    last_name:'Beau'
-  }, {
-    first_name:'Corentin',
-    last_name:'PD'
-  }];
-
-  response.status(200).send(users);
-});
-
-app.use(router);
-
 app.use(express.static('public'));
+
+let params = {
+  router: router
+};
+
+app.use('/', require('./modules/users/route')(params));

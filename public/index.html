@@ -10,16 +10,16 @@
 
 <body>
   <div ng-controller="indexCtrl as app">
-    <input type="text" ng-model="name1" placeholder="On utilise $scope" />
+    <input type="text" ng-model="name1" placeholder="use $scope ( name1 )" />
     <br />
-    <input type="text" ng-model="app.name2" placeholder="On utilise this" />
+    <input type="text" ng-model="app.name2" placeholder="use this ( app.name2 )" />
     <br /><br />
     <h2 ng-if="name1 != ''">Hello {{name1}} </h2>
     <br />
     <h2 ng-if="app.name2 != ''">Hi {{app.name2}} </h2>
 
     <div ng-repeat="user in app.users">
-      <p>{{user.first_name}} {{user.last_name}}</p>      
+      <p>{{user.first_name}} {{user.last_name}}</p>
     </div>
   </div>
 
