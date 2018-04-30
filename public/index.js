@@ -11,7 +11,7 @@ angular.module('angularApp', []).controller('indexCtrl', function($scope, indexS
 
   $scope.greeting1 = `Hello ${$scope.name1}`;
 
-  ctrl.greeting2 = `Hi ${ctrl.name2}`;
+  ctrl.greeting2 = 'Hi '+ ctrl.name2;
 
   indexService.getUsers(function(users){
     if(users !== null) {
@@ -28,7 +28,7 @@ angular.module('angularApp', []).controller('indexCtrl', function($scope, indexS
       }, function(err) {
         console.error(err);
         callback(err);
-      })
+      });
     };
 
     return service;
